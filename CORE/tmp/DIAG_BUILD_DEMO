@@ -1,0 +1,131 @@
+make[1]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs'
+Inside subdirectory  bareiss : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bareiss'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bareiss'
+
+Inside subdirectory  benchmark : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark'
+make -C bigfloat
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark/bigfloat'
+make[3]: Nothing to be done for 'default'.
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark/bigfloat'
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark'
+
+Inside subdirectory  bounds : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bounds'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bounds'
+
+Inside subdirectory  chull : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/chull'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/chull'
+
+Inside subdirectory  core2paper : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper'
+make -C sumProd default
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/sumProd'
+g++ -c -Wfatal-errors -O3 -Wall -DNDEBUG -Dcyg -I. -I../../../inc -I../../../mpfr/include -I../../../gmp/include  tSum.cpp -o tSum1.o
+g++  --stack,83886080 tSum1.o -L../../../lib -L../../../mpfr/lib -L../../../gmp/lib -lcore++Opt -lmpfr -lgmp -o tSum1
+g++: error: unrecognized command line option ‘--stack,83886080’
+Makefile:73: recipe for target 'tSum1' failed
+make[3]: *** [tSum1] Error 1
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/sumProd'
+Makefile:9: recipe for target 'default' failed
+make[2]: [default] Error 2 (ignored)
+make -C transcendental default	
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/transcendental'
+make[3]: Nothing to be done for 'default'.
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/transcendental'
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper'
+
+Inside subdirectory  compare : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/compare'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/compare'
+
+Inside subdirectory  demos : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/demos'
+make[2]: 'default' is up to date.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/demos'
+
+Inside subdirectory  determinant : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/determinant'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/determinant'
+
+Inside subdirectory  fileIO : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fileIO'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fileIO'
+
+Inside subdirectory  fortune : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune'
+make -C vor default
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune/vor'
+make[3]: Nothing to be done for 'default'.
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune/vor'
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune'
+
+Inside subdirectory  gaussian : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/gaussian'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/gaussian'
+
+Inside subdirectory  geom2d : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/geom2d'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/geom2d'
+
+Inside subdirectory  generic : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/generic'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/generic'
+
+Inside subdirectory  interval : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/interval'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/interval'
+
+Inside subdirectory  kahan : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/kahan'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/kahan'
+
+Inside subdirectory  pi : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/pi'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/pi'
+
+Inside subdirectory  poly : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/poly'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/poly'
+
+Inside subdirectory  sumOfSqrts : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/sumOfSqrts'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/sumOfSqrts'
+
+Inside subdirectory  testIdent : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIdent'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIdent'
+
+Inside subdirectory  testIO : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIO'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIO'
+
+Inside subdirectory  testsuite : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testsuite'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testsuite'
+
+Inside subdirectory  tutorial : =-=-=-=-=-=-=-=->>>
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/tutorial'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/tutorial'
+
+make[1]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs'

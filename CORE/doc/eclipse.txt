@@ -1,0 +1,328 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+How to Use Eclipse with Core Library
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+TABLE OF CONTENTS:
+	--1. Get a copy of Core2
+	--2. Start up eclipse
+	--3. Create a new C++ Project based on Core2.
+	--4. WHAT NEXT?
+	--5. Exercise 1: Exploring an existing file.
+	--6. Exercise 2: Writing a simple CORE program in eclipse
+	--7. Exercise 3: Creating a Makefile target in eclipse
+	--8. Exercise 4: Creating eclipse targets and building them
+	--9. How do I get Eclipse to list symbols from system includes?
+	--10. How to get eclipse to recognize some CORE files as C++ files?
+	--1000. END
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+--1. Get a copy of Core2
+	-- let us assume ~/core is the main directory, and under
+	   this, you might have several variants of Core Library.
+	   For the current example, we assume that the Core2 to be
+	   used by eclipse is actually in ~/core/mycore2.
+	-- You can get Core2 either from our webpage or directly
+	   from SVN.  If from SVN, eclipse can interface with SVN.
+	   Our website is http://cs.nyu.edu/exact/.
+	-- Make sure that you have set up gmp and mpfr correctly
+	   by doing the following two tests:
+	      > cd ~/core/mycore2
+	      > make testgmp  
+	      > make testmpfr
+	-- The screen output will let you know if testgmp and
+	   testmpfr succeeds.  If not, follow instructions found
+	   in ~/core/mycore2/README.
+	-- Now you are ready to create the eclipse project.
+
+--2. Start up eclipse
+	-- The following is based on Eclipse IDE for C/C++
+	   Developers, Version 1.2.1.20090918-0703, for the MacOS.
+	   But other platforms or versions should be rather similar.
+	-- Eclipse will ask for a workspace (i.e., a directory
+	   store state information.   Say "~/core" (or browse to find it).
+	-- after when it opens, there are several options.
+	   Click on the icon which sends you into the "Workbench".
+
+	-- Workbench Layout and Orientation:
+
+	   The window space of the workbench is divided into 4 panels,
+	   Left, Bottom, Center, and Right Panels.  More precisely:
+
+	   First, the window is divided into two un-equal parts by a vertical
+	   line: the left part is what I call "Left Panel".  The right part is
+	   divided into two un-equal parts by a horizontal line:
+	   the bottom part is the "Bottom Panel", and the top part is again
+	   divided into two by a vertical line: the left part is what I
+	   call the "Center Panel", and right part is the "Right Panel".
+	   The Center Panel occupies the most area, followed by the Left Panel.
+
+		 ========================================
+		||	   |			|	||
+		||	   |			|	||
+		||	   |			|	||
+		||	   |			|	||
+		||	   |  Center		|Right	||
+		||	   |			|	||
+		|| Left	   |			|	||
+		||	   |			|	||
+		||	   |			|	||
+		||	   |----------------------------||
+		||	   |				||
+		||	   |	 Bottom			||
+		||	   |				||
+		 ========================================
+
+	   NOTE: this is the default setup, but you could change all this.
+	   For the duration of this exercise, we keep this setup.
+
+	   Each panel can hold several "tabbed documents" which can be viewed as
+	   sheets of paper stored in a single pile.  Only the top document (if any)
+	   is completely visible; the others are represented by a a small tab in the
+	   top row of the panel.  By clicking on any tab, you bring the corresponding
+	   tabbed document to the top of the pile.  
+	   For instance, the Left Panel initially has a tabbed document called
+	   "Project Explorer".  The Center Panel initially has no documents.
+	   If you open any file for browsing or for editing,
+	   it will be displayed in a new tabbed document of the Center Panel.
+	   For now, let us ignore the other 2 panels, the Bottom and Right Panels.
+
+--3. Create a new C++ Project based on Core2.
+	-- Choose from the dropdown menu bar,
+
+	"File" --> "New" --> "C++ Project"
+
+	You need to make some additional decisions:
+
+	-- Project name: (give any name you want, say "mycore2")
+	     You will get a "default location" for the path, but
+	     you can uncheck this choice and browse for the correct path.
+
+	-- Project type:
+	     You have several choices (Executable, Shared Library,
+	     Static Library, or Makefile Project).
+	     Click on "Makefile Project".  
+
+	-- Under Makefile Project, you have two
+	     choices (Empty Project, or Hello World Project).
+	     The "Hello World Project" will generate a Makefile for
+	     you (destroying our own existing Makefile).  
+	     Since Core2 has its own Makefiles, we will
+	     click on "Empty Project".
+
+	-- Click "Finish".
+
+	Eclipse will begin to read the entire Core2 library and
+	do a "Make all" at the top level.  This may take some time.  
+	There should be no error (typically, error arise because "Make all"
+	could not find gmp or mpfr -- in this case, go back to Step 1).
+
+	CONGRATULATIONS!!!  You have create a project in Eclipse
+	based on Core2.
+
+--4. WHAT NEXT?
+	In the future, you can return to your "mycore2" project
+	by firing up eclipse, and if you enter the above
+	workspace "~/core" and you should be able to
+	get back to the state when you quit the end of Step 5.
+
+	In the following, we show you several simple tasks.
+	You will learn how to write a simple Core Library program,
+	and to compile and run it within Eclipse.
+
+--5. Exercise 1: Exploring an existing file.
+	Before proceeding, you will see that the
+	"Project Explorer" tab is no longer empty: it shows 
+	a directory called "mycore2".   There is a tiny triangle
+	just left of the name "mycore2".  This triangle is on its 
+	sides when the directory is closed, and upright when the directory
+	is open.  Clicking this triangle to toggle between
+	open and close.  When a directory is open, the list of all
+	its subdirectories and files will be displayed
+	(subdirectories are listed before files, and you recognize them
+	as such by the tiny triangles just left of their names).
+
+	For our first Exercise, we want to opening the existing file
+
+		"~/core/mycore2/progs/Makefile":
+
+	* Open the directory "mycore2" in the Project Explorer tab.
+	  Locate the subdirectory "progs" under mycore2.
+	* Open the subdirectory "progs".
+	  Locate the file "Makefile" under progs.  It should be
+	  near the bottom of the list, after all subdirectories.
+	* Right-click on "Makefile" to open a contextual
+	  dropdown menu.   [In MacOS touchpad, right-click means
+	  placing 2 fingers on the touchpad while clicking].
+	  From menu, choose "Open".  This will open file "Makefile"
+	  and display it a new tab named "Makefile" in the Center Panel.
+	* You can now browse (and edit if desired) the "Makefile" file.
+	* Congratulations!  You have completed your first task in the
+	  project!  You may now quit from Eclipse.
+
+--6. Exercise 2: Write a simple Core program in eclipse
+	Note that we recommend writing Core2 programs within
+	some subdirectory of ~/core/mycore2/progs.  This lets us
+	use default Makefiles and links already found in Core2.
+	Let us use the subdirectory "tests" under ~/core/mycore2/progs:
+
+	-- Open the directory ~/core/mycore2/progs/tests,
+	   similar to the procedure in Exercise 1 (Step 5).
+	-- We want to write a program called "mytest.cpp" in this
+	   directory.  Here is how to open the file:
+
+	   * Click on the subdirectory "tests" to select it.
+	   * Right-click "tests" (see Step 5) to get the contextual menu.
+	   * From the menu, choose "New" and then "Source File".
+	     I.e., your new program "mytest.cpp" is a source file.
+	   * The popup window should show the source folder
+	     (viz., ~/core/mycore/progs/tests).  Type the name
+	     "mytest.cpp" for the file name, and click "finish".
+	   * A tab for "mytest.cpp" will display in the Center Panel,
+	     with some default header information.
+	
+	-- Now, type your first Core2 program into "mytest.cpp":
+	
+	 |
+	 |#mytest.cpp: my first eclipse-Core program
+	 |#include "CORE.h"
+	 |
+	 |int main(){
+	 |  double x=2;
+	 |  std::cout << std::setprecision(60);  
+	 |  std::cout << "sqrt(2) =" << sqrt(x).approx(200) << std::endl;
+	 |  return 0;
+	 |}
+	 |
+	    
+	-- This program approximates sqrt(2) to 200 bits,
+	   and then displays it up to 60 digits.  
+	   (WHY 200? Because 60 digits is 60*log(10)/log(2)=199.32 bits!)
+	-- Before you save this program, notice the small asterisk (*) 
+	   preceding the name "mytest.cpp".  This asterisk will go away
+	   after you save the file.
+	-- Save this program (command-S in MacOS, but it should be
+	   obvious how to do this on any platform using the File menu).
+	-- To compile and run it, please to proceed to the next exercise.
+
+--7. Exercise 3: Create a Makefile target in eclipse
+	Our goal is to create two targets to the current Makefile.
+	
+	-- Open the file ~/core/mycore2/progs/tests/Makefile
+	   (similar to Exercise 1, Step 5)
+	-- Add two new targets called "mytest" and "myrun"
+	   by inserting these six lines into the Makefile:
+
+		 |...
+		1|
+		2|mytest: mytest.o
+		3|
+		4|myrun: mytest
+		5|-------> mytest
+		6|
+		 |...
+
+	   where -------> indicates a tab, and | indicates the left margin
+	   of the Makefile.  This "mytest" target says "first compile the
+	   file "mytest.cpp" into "mytest". The "myrun" target (which depends
+	   on the mytest target) simply runs "mytest".
+	   Lines 1, 3 and 6 are blank lines, to separate the targets.
+
+	   Best to put these 2 new lines at (or, near to) the very bottom 
+	   of the file.  The actual placement is not
+	   important, as long as you do not mess up other targets.
+	    
+	-- Save the modified Makefile.  That is it!
+
+	What now?  If you were in a command window, you could run these
+	   targets directly, by typing "make mytest" or "make myrun".
+	   But how to do this within Eclipse?  We need to create an
+	   "Eclipse target" that corresponds to this "Makefile target",
+	   then invoke the eclipse target.  That is the next exercise.
+
+--8. Exercise 4: Creating eclipse targets and building them
+	-- First create an "Eclipse targets" corresponding to "myrun"
+	   in Makefile:
+
+	   * in Project Explorer panel, open the directory
+	            /core/mycore2/progs/tests.
+	   * Right-click "Makefile" to get the contextual menu.
+	   * Hover over the "Make Targets" option.
+	   * Two suboptions will appear (Create or Build).  Click "Create"
+	   * For the "Target name", type "myrun" 
+	   * Click "OK".  That is it!
+
+	-- You can also create an Eclipse target for "mytest".
+
+	-- Now, how do you invoke an eclipse target like "myrun"?
+	   Note that the eclipse terminology for
+	   invoking a target is called "building the target".
+
+	   * Repeat the previous steps as were done for creating
+	     the Eclipse target, but when the two suboptions appear,
+	     click on "Build" instead of "Create".
+	   * You will see the targets "myrun" on the popup panel,
+	     which you created earlier.
+	   * Click on "myrun" and click the "Build" button.  That is it!
+
+	So far, we have ignored the Bottom Panel.  This will probably
+          have several default tabs, and one of which is called "Console".
+	  Bring this tab to the front by clicking its name.
+	  You will see the target "myrun" being built: first,
+	  the source "mytest.cpp" will be compiled into the executable
+	  "mytest".  Then "mytest" would be run.  The output should show
+	  the sqrt(2) to 60 digits of accuracy. 
+	  On my MacOS, I see this output on my console, and you should
+	  see exactly the same (unless Core 2 has a bug):
+
+	sqrt(2)=1.41421356237309504880168872420969807856967187537694807317668
+
+--9. How do I get Eclipse to list symbols from system includes?
+	Normally, eclipse knows the definitions of all C++ symbols used
+	in your programs, and you can jump to their definitions by clicking
+	on the symbols.  But symbols that came from system include files, e.g.,
+	      #include <string>
+	      #include <iostream>
+	may not have links to their definitions.   So if you
+	have a runtime time error with a function inside <string>, you
+	will not be able to why there is an error.  How to fix this?
+
+	--In the Center Panel where source files can be browsed, you will see
+	--However, you might find that some standard system include files, e.g.,
+	--How do you ask Eclipse to search in these standard system files?
+	  (a) First, in the Project Explorer in the Left Panel, click on "core2" project.
+	  (b) Next, click on "Project" in the menu bar, and choose "properties"
+	  (c) A pop-up menu appears.
+	      On the left column of the pop-up menu, you will see "C/C++ Build".
+	      Click to expand this menu option.
+	  (d) From the several options offered, click "Discovery Options".
+	  (e) On the right column of the pop-up menu, you will see a check button for
+		"Automate discovery of paths and symbols".  Check this and click OK.
+
+--10. How to get eclipse to recognize some CORE files as C++ files?
+	E.g., if you browse the file $(CORE)/inc/CORE/poly/Curves.tcc, you
+	see that Eclipse does not recognize "*.tcc" to be form of "*.h" file.
+	So it will not display the classes, functions, variables, etc, for
+	this file in the right panel.  Another file type that we use in Core
+	Library is "*.inl".
+	Incidentally, ".tcc" stands for "templated cc" files and ".inl"
+	stands for "inline".  To inform Eclipse that these are C++ files, do this:
+	
+	--On the main menu bar,
+	  choose "Eclipse" --> "Preferences" --> C/C++ --> "File Types".
+	--Click on "new" and a pop-up menu will ask you to enter the 
+	  pattern.  Type "*.tcc" for the new pattern.   You will also need to
+	  say that this new pattern is a "C++ header".  Click "OK".
+	  Do the same for "*.inl".
+	
+--11. Useful HINTS 
+	On the Mac, command-click on a function or variable will jump to the
+	definition of the function or variable.
+
+--1000. END
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Since Core Library 2.0
+Chee Yap (April 2010)
+  -- Thanks to from Narayan Kamath (Oxford University) for help with eclipse.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

@@ -1,0 +1,110 @@
+#This file contains a list of polynomials that have integer coefficients.
+#We break them down according to their degree
+#
+#Polynomials with degree less than 10
+geom3_10.pol:dri
+geom4_10.pol:dri
+kam3_1.pol:sri
+kam3_2.pol:sri
+kam3_3.pol:sri
+kam4.pol:sri
+kir1_10.pol:dri
+kir1_10_mod.pol:dri
+#
+#Polynomials with degree less than 20 greater than 10
+chebyshev20.pol:dri
+chrma_d20.pol:dri
+geom3_20.pol:dri
+chrmc_d11.pol:dri
+geom4_20.pol:dri
+hermite20.pol:dri
+kir1_20.pol:sri
+kir1_20_mod.pol:sri
+laguerre20.pol:dri
+#
+#Polynomials with degree less than 40 greater than 20
+chebyshev40.pol:dri
+chrma22.pol:dri
+geom3_40.pol:dri
+geom4_40.pol:dri
+hermite40.pol:dri
+kir1_40.pol:sri
+kir1_40_mod.pol:sri
+laguerre40.pol:dri
+lsr_24.pol:dri
+mand31.pol:dri
+wilk40.pol:dri
+#
+#Polynomials with degree less than 80 greater than 40
+chebyshev80.pol:dri
+chrmc_d43.pol:dri
+geom3_80.pol:dri
+hermite80.pol:dri
+geom4_80.pol:dri
+laguerre80.pol:dri
+mand63.pol:dri
+mig1_50_1.pol:sri
+wilk80.pol:dri
+#
+#Polynomials with degree less than 100 greater than 80
+chrma_d84.pol:dri
+chrma86.pol:dri
+#
+#Polynomials with degree greater than 100
+chebyshev160.pol:dri
+easy100.pol:dri
+chebyshev320.pol:dri
+chrma342.pol:dri
+chrma_d340.pol:dri:Huge Coefficients!
+chrmc343.pol:dri
+chrmc_d171.pol:dri
+chrmc_d683.pol:dri
+hermite160.pol:dri
+hermite320.pol:dri
+kats8.pol:dri
+laguerre160.pol:dri
+laguerre320.pol:dri
+lsr1.pol:sri
+lsr2.pol:sri
+lsr3.pol:sri
+lsr_200.pol:sri
+mand1023.pol:dri
+mand127.pol:dri
+mand255.pol:dri
+mand511.pol:dri
+mig1_100_1.pol:sri
+mig1_200_1.pol:sri
+mig1_500_1.pol:sri
+nektarios.pol:drf
+nroots100.pol:sri
+nroots1600.pol:sri
+nroots200.pol:sri
+nroots3200.pol:sri
+nroots400.pol:sri
+nroots6400.pol:sri
+nroots800.pol:sri
+sparse100.pol:sri
+sparse1600.pol:sri
+sparse200.pol:sri
+sparse3200.pol:sri
+sparse400.pol:sri
+sparse6400.pol:sri
+sparse800.pol:sri
+wilk160.pol:dri
+wilk320.pol:dri
+#
+#Special polynomials
+goldenratio.pol:dri
+mult1.pol:sri:Multiple roots
+mult2.pol:sri:Multiple roots
+mult3.pol:dri:Multiple roots
+mult4.pol:dri:Multiple roots
+nroots50.pol:sri:Roots of unity
+trv_m.pol:sri:Multiple roots
+wilk20.pol:dri
+chrmc23.pol:dri:Not square-free
+easy1600.pol:dri:No Real roots
+easy200.pol:dri
+easy3200.pol:dri
+easy400.pol:dri
+easy800.pol:dri

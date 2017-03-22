@@ -1,0 +1,10 @@
+#Polynomials with degree less than 80 greater than 40
+chebyshev80.pol
+chrmc_d43.pol
+geom3_80.pol
+hermite80.pol
+geom4_80.pol
+laguerre80.pol
+mand63.pol
+mig1_50_1.pol
+wilk80.pol

@@ -1,0 +1,27 @@
+============================================================
+README file for doc
+Core Library 
+============================================================
+
+	Some useful documents related to Core Library.
+
+	tutorial.pdf	-- The tutorial for Core Library. It was originally
+			   written for Core 1*, but the basic interface and 
+			   usage is still valid for the latest version of
+			   Core Library.  An update is planned for Core 2*.
+
+	zilinThesis.pdf	-- this is Zilin Du's PhD thesis in 2006
+			   describing the new design of Core 2.0. 
+			   Expressions became parametrized by three
+			   modules (filter class, root-bound class and
+			   number kernel class).  We introduced support for
+			   transcendental functions and anary functions
+			   such as sum and product.
+
+	eclipse.txt	-- a basic introduction to using the eclipse IDE
+			   with Core Library.
+
+============================================================
+$Id: README,v 1.7 2010/07/14 16:09:03 exact Exp $
+============================================================
+ 

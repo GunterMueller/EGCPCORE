@@ -1,0 +1,236 @@
+make[2]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs'
+Inside subdirectory  bareiss : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bareiss'
+./bareiss
+./bareiss: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:17: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bareiss'
+
+Inside subdirectory  benchmark : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark'
+make -C bigfloat test
+make[4]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark/bigfloat'
+./bm_bigfloat 100 1000 
+it took 0 mseconds!
+./bm_bigfloat 100 10000 
+it took 0 mseconds!
+./bm_bigfloat 100 100000 
+it took 104 mseconds!
+make[4]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark/bigfloat'
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/benchmark'
+
+Inside subdirectory  bounds : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bounds'
+time ./tEscapeBound 2000
+./tEscapeBound: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Command exited with non-zero status 127
+0.00user 0.00system 0:00.00elapsed ?%CPU (0avgtext+0avgdata 524maxresident)k
+0inputs+0outputs (0major+33minor)pagefaults 0swaps
+Makefile:30: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/bounds'
+
+Inside subdirectory  chull : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/chull'
+./chull_level3 < inputs/points > outputs/points.3.ps
+./chull_level3: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:21: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/chull'
+
+Inside subdirectory  core2paper : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper'
+make -C sumProd test
+make[4]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/sumProd'
+g++ -c -Wfatal-errors -O3 -Wall -DNDEBUG -Dcyg -I. -I../../../inc -I../../../mpfr/include -I../../../gmp/include  tSum.cpp -o tSum1.o
+g++  --stack,83886080 tSum1.o -L../../../lib -L../../../mpfr/lib -L../../../gmp/lib -lcore++Opt -lmpfr -lgmp -o tSum1
+g++: error: unrecognized command line option ‘--stack,83886080’
+Makefile:73: recipe for target 'tSum1' failed
+make[4]: *** [tSum1] Error 1
+make[4]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/sumProd'
+Makefile:19: recipe for target 'test' failed
+make[3]: [test] Error 2 (ignored)
+make -C transcendental test
+make[4]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/transcendental'
+./tConst 1000 1
+./tConst: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:31: recipe for target 'test' failed
+make[4]: *** [test] Error 127
+make[4]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper/transcendental'
+Makefile:19: recipe for target 'test' failed
+make[3]: [test] Error 2 (ignored)
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/core2paper'
+
+Inside subdirectory  compare : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/compare'
+./compare 10 1
+./compare: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:20: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/compare'
+
+Inside subdirectory  demos : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/demos'
+./scheinerman3
+./scheinerman3: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:60: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/demos'
+
+Inside subdirectory  determinant : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/determinant'
+./determinant inputs/random_50bits_dim_5 10
+./determinant: error while loading shared libraries: libcorex++Opt_level3.so: cannot open shared object file: No such file or directory
+Makefile:16: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/determinant'
+
+Inside subdirectory  fileIO : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fileIO'
+./fileIO
+./fileIO: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:16: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fileIO'
+
+Inside subdirectory  fortune : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune'
+make -C vor test
+make[4]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune/vor'
+./voronoi -c < inputs/lattice9 > outputs/lattice9.ps
+./voronoi -c < inputs/points100 > outputs/points100.ps
+./voronoi -ct < inputs/points100 > outputs/points100-tri.ps
+make[4]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune/vor'
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/fortune'
+
+Inside subdirectory  gaussian : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/gaussian'
+./gaussian_level3 inputs/MatHilbert6 3
+./gaussian_level3: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:25: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/gaussian'
+
+Inside subdirectory  geom2d : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/geom2d'
+./testLine
+./testLine: error while loading shared libraries: libcorex++Opt_level3.so: cannot open shared object file: No such file or directory
+Makefile:26: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/geom2d'
+
+Inside subdirectory  generic : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/generic'
+./sample
+./sample: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:27: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/generic'
+
+Inside subdirectory  interval : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/interval'
+./interval_t
+./interval_t: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:17: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/interval'
+
+Inside subdirectory  kahan : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/kahan'
+./kahan
+./kahan: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:17: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/kahan'
+
+Inside subdirectory  pi : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/pi'
+./newPi 6644 0
+./newPi: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:26: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/pi'
+
+Inside subdirectory  poly : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/poly'
+./tSturmBF
+./tSturmBF: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:64: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/poly'
+
+Inside subdirectory  sumOfSqrts : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/sumOfSqrts'
+./graham
+./graham: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:18: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/sumOfSqrts'
+
+Inside subdirectory  testIdent : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIdent'
+./testIdent
+./testIdent: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:18: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIdent'
+
+Inside subdirectory  testIO : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIO'
+./testIO
+./testIO: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:33: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testIO'
+
+Inside subdirectory  testsuite : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testsuite'
+./t_bigint 
+y=11
+y=12
+x=2210
+x=2222
+z=2234
+z=2322
+z=2322
+x=2222
+y=12
+z=185
+z=22
+z=0
+x=2222
+y=12
+True or false: 2222==12 ?0
+True or false: 2222== 100 ? 0
+True or false: 100 == 2222 ? 0
+./t_bigrat 
+y=11
+y=12
+x=2210
+x=2222
+z=x
+z=x
+z=2234
+z=2322
+z=2322
+x=2222
+y=12
+True or False? 2222 == 12 ? 0
+True or False? 2222 == 100 ? 0
+True or False? 100 == 2222 ? 0
+./t_bigfloat 
+./t_bigfloat: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:22: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/testsuite'
+
+Inside subdirectory  tutorial : =-=-=-=-=-=-=-=->>>
+make[3]: Entering directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/tutorial'
+./delaunay 7
+./delaunay: error while loading shared libraries: libcore++Opt.so: cannot open shared object file: No such file or directory
+Makefile:32: recipe for target 'test' failed
+make[3]: *** [test] Error 127
+make[3]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs/tutorial'
+
+make[2]: Leaving directory '/home/gunter/GM_MATH/Graph_Drawing/CORE/SVN/MyCORELibs/progs'

@@ -1,0 +1,53 @@
+%!PS-Adobe-2.0
+%% draw vertex
+/vertex {
+2 0 360 arc fill
+} def
+
+%% draw edge 
+/edge {
+/y2 exch def
+/x2 exch def
+moveto
+x2 y2 lineto stroke
+} def
+
+10	15	 translate
+2 setlinewidth
+stroke 
+1 setlinewidth
+
+25	25	 vertex
+125	25	 vertex
+225	25	 vertex
+25	125	 vertex
+125	125	 vertex
+225	125	 vertex
+75	75	175	75	 edge
+175	75	175	75	 edge
+75	75	75	75	 edge
+25	225	 vertex
+125	225	 vertex
+225	225	 vertex
+75	75	75	175	 edge
+74	175	74	175	 edge
+175	75	175	175	 edge
+75	175	175	175	 edge
+175	175	175	175	 edge
+14	75	75	75	 edge
+14	175	74	175	 edge
+75	175	75	235	 edge
+175	175	175	235	 edge
+175	175	235	175	 edge
+175	75	235	75	 edge
+175	14	175	75	 edge
+75	14	75	75	 edge
+newpath
+14	14	 moveto
+14	235	 lineto
+235	235	 lineto
+235	14	 lineto
+closepath
+stroke
+
+ showpage
